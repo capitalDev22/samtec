@@ -1,0 +1,189 @@
+/*
+*************
+*=Main container
+*************
+*/
+.container_24{
+	/*background: #bebebe;*/
+	font-family: helvetica, futura, arial;
+	font-size: 10pt;
+	margin-top: 10px;
+	background-color: #edeeec;
+}
+/*
+*************
+*=Header
+*************
+*/
+.logo h1{
+	background: url(../img/small-logo.png) no-repeat;
+	width: 250px;
+	height: 100px;
+	text-indent: -9999px;
+	float: left;
+	margin: 10px;
+}
+.banner {
+	background: url(../img/img-2021.jpg) no-repeat;
+	width: 700px;
+	height: 230px;
+	margin-top: 0px;
+}
+.banner h2{
+	color: white;
+	font-size: 16px;
+	font-weight: normal;
+	position: relative;
+	top: 190px;
+	background: rgba(0, 0, 0, .5);
+	width: 400px;
+	padding-left: 20px;
+}
+
+header {
+	overflow: hidden;
+}
+.second-img {
+	background: url(../img/drawing-img.jpg) no-repeat;
+	width: 360px;
+	height: 230px;
+}
+
+
+/*
+*************
+*=Nav
+*************
+*/
+
+nav	ul {
+	float: right;
+	padding-top: 80px;
+
+	
+}
+nav li{
+	display: inline;
+	padding-left: 25px;
+	margin-right: 10px;
+}
+a {
+	color: #7e7e7e;
+}
+a:hover, .selected{
+	color: black;
+}
+/*
+*************
+*=Misc
+*************
+*/
+.main h1{
+	line-height: 20px;
+	font-size: 14pt;
+	color: #395B73;	
+}
+.grid_6, .grid_8, .grid_10{
+	border-top: 1px solid #d1d1d1;
+	padding-top: 10px;
+} 
+P{
+	line-height: 20px;
+}
+a {
+	color: #7e7e7e;
+}
+a:hover, .selected{
+	color: black;
+}
+.main .button {
+	background: #bebebe;
+	padding: 6px;
+}
+.main .button:hover{
+	color: white;
+}
+
+.main ul{
+	padding-top: 10px;
+	padding-left: 10px;
+}
+.main li{
+	padding-bottom: 10px;
+
+}
+.type {
+	padding-left: 10px;
+}
+.main select{
+	margin-bottom: 10px;
+}
+.main button{
+	margin-left: 20px;
+}
+
+/*
+*************
+*=Main
+*************
+*/
+.main {
+	margin-top: 20px;
+}
+
+.grid_6 li{
+	list-style-type: disc;
+	margin-left: 10px;
+	line-height: 10px;
+
+}
+/*
+*************
+*=Measurements entry
+*************
+*/
+.quote-fiel	d table{
+	margin-bottom: 20px;
+	width: 31%;
+}
+.quote-field #submit{
+	position: relative;
+	top: 100px;
+	left: 10px;
+
+}
+.grid_18 table{
+	margin-top: 20px;
+	margin-left: 50px;
+}
+.grid_18 td {
+	border: 1px solid black;
+	padding-right: 15px;
+	text-align: center;
+}
+
+
+.type #cost {
+	width: 100px;
+}
+.type select{
+	margin-left: 0px;
+}
+
+
+
+.grid_10 img{
+	margin-left: 35px;
+	background: #ccccc9;
+	border-radius:20px;
+
+}
+footer{
+	clear: both;
+}
+footer p{
+	padding-top: 10px;
+	padding-left: 20px;
+	border-top: 1px solid #d1d1d1;
+	margin-bottom: 20px;
+}

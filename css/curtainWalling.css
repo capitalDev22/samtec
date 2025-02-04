@@ -1,0 +1,331 @@
+/*
+*************
+*=Main container
+*************
+*/
+.container_24{
+	/*background: #bebebe;*/
+	font-family: helvetica, futura, arial;
+	font-size: 10pt;
+	margin-top: 10px;
+	background-color: #edeeec;
+}
+
+/*
+*************
+*=Header
+*************
+*/
+.logo h1{
+	background: url(../img/small-logo.png) no-repeat;
+	width: 250px;
+	height: 100px;
+	text-indent: -9999px;
+	float: left;
+	margin: 10px;
+}
+.banner {
+	background: url(../img/img-2021.jpg) no-repeat;
+	width: 700px;
+	height: 230px;
+	margin-top: 0px;
+}
+.banner h2{
+	color: white;
+	font-size: 16px;
+	font-weight: normal;
+	position: relative;
+	top: 170px;
+	background: rgba(0, 0, 0, .5);
+	width: 400px;
+	padding-left: 20px;
+}
+
+header {
+	overflow: hidden;
+}
+
+.second-img {
+	background: url(../img/drawing-img.jpg) no-repeat;
+	width: 360px;
+	height: 230px;
+}
+	
+
+/*
+*************
+*=Nav
+*************
+*/
+
+nav	ul {
+	float: right;
+	padding-top: 80px;
+
+	
+}
+nav li{
+	display: inline;
+	padding-left: 25px;
+	margin-right: 10px;
+
+}
+.selectSeries li {
+	display: inline;
+	float: left;
+	margin-left: 0px;
+	padding-left: 0px;
+	margin-right: 10px;
+}
+
+
+/*
+*************
+*=Misc
+*************
+*/
+.quoteArea h1{
+	line-height: 20px;
+	font-size: 14pt;
+	color: #395B73;	
+}
+#enterMeasurements, #selectionArea,
+	border-top: 1px solid #d1d1d1;
+	padding-top: 10px;
+} 
+P{
+	line-height: 20px;
+}
+a {
+	color: #7e7e7e;
+}
+a:hover, .selected{
+	color: black;
+}
+/*.quoteArea .button {
+	background: #bebebe;
+	padding: 6px;
+}
+.quoteArea .button:hover{
+	color: white;
+}*/
+
+.quoteArea ul{
+	padding-top: 10px;
+	padding-left: 10px;
+}
+.quoteArea li{
+	padding-bottom: 10px;
+
+}
+.type {
+	padding-left: 10px;
+}
+.quoteArea select{
+	margin-bottom: 10px;
+}
+/*.quoteArea button{
+	margin-left: 20px;
+}*/
+
+/*
+*************
+*=quoteArea
+*************
+*/
+.quoteArea {
+	margin-top: 20px;
+}
+
+.grid_7 #whatWeDo li{
+	list-style-type: disc;
+	margin-left: 10px;
+	line-height: 10px;
+}
+
+.startButton {
+	background: #bebebe;
+	margin-left: 10px;
+/*	padding: 6px;*/
+}
+.startButton:hover{
+	background: #395B73;
+}
+
+
+/*
+*************
+*=Measurements entry
+*************
+*/
+.quote-field{
+	width: 200px;
+	padding-bottom: 20px;
+	border-radius:20px;
+	margin-left: 10px;
+
+}
+
+.quote-field #cost {
+	width: 100px;
+}
+
+.quote-field #height {
+	width: 100px;
+	background: #ccccc9;
+}
+
+.quote-field #width {
+	width: 105px;
+	background: #ccccc9;
+}
+
+
+.grid_10 img{
+	margin-left: 35px;
+	background: #ccccc9;
+	border-radius:20px;
+
+}
+.type #choseType {
+	width: 110px;
+
+}
+#whatWeDo {
+	float: right;
+}
+footer{
+	clear: both;
+}
+footer p{
+	padding-top: 10px;
+	padding-left: 20px;
+	border-top: 1px solid #d1d1d1;
+	margin-bottom: 20px;
+}
+
+/*
+*************
+*=Properties
+*************
+*/
+.propertiesArea {
+	padding-left: 10px;
+}
+
+
+
+
+
+
+
+/*
+*************
+*=Content
+*************
+*/
+.mainContent {
+	border-top: 1px solid #d1d1d1;
+	padding-top: 10px;
+	line-height: 30px;
+}
+/*.grid_18{
+	border-top: 30px solid #d1d1d1;
+	padding-top: 20px;
+	line-height: 30px;
+	font-size: 10pt
+}*/
+.grid_17 h3{
+	font-size: 10pt;
+	color: #7e7e7e;
+}
+.grid_17 {
+	border-bottom: 1px solid #d1d1d1;
+	margin-bottom: 20px;
+}
+.grid_17 h1{
+	font-size: 14pt;
+	color: #395B73;
+	font-weight: normal;
+}
+
+
+.read-more{
+	width:280px;
+	height: 50px;
+	text-decoration: none;
+	background-color: #C9A479;
+	position: relative;
+	left: 80px;
+
+}
+.our-projects{
+	width:290px;
+	height: 50px;
+	text-decoration: none;
+	background-color: #395B73;
+	position: relative;
+	left: 400px;
+	bottom: 50px;
+}
+
+.read-more a{
+	text-decoration: none;
+	color: white;
+	margin: 0;
+  	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+}
+.our-projects a{
+	text-decoration: none;
+	color: white;
+	margin: 0;
+  	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+}
+.read-more a:hover, .selected{
+	color: black;
+}
+.our-projects a:hover, .selected{
+	color: black;
+}
+
+/*
+*************
+*=Types
+*************
+*/
+.secNav ul {
+	float: left;
+	padding-top: 10px;
+
+	
+}
+.secNav li{
+	display: inline;
+	padding-left: 10px;
+	margin-right: 0px;
+}
+
+
+.propertiesArea label:after {
+  content: "*";
+  color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,74 @@
+/*
+*************
+*=Main container
+*************
+*/
+.container_24{
+	font-family: helvetica, futura, arial;
+	font-size: 10pt;
+	margin-top: 10px;
+	background-color: #edeeec;
+}
+/*
+*************
+*=Header
+*************
+*/
+.logo h1{
+	background: url(../img/small-logo.png) no-repeat;
+	width: 250px;
+	height: 100px;
+	text-indent: -9999px;
+	float: left;
+	margin: 10px;
+}
+.banner {
+	background: url(../img/img-2021.jpg) no-repeat;
+	width: 700px;
+	height: 230px;
+	margin-top: 0px;
+}
+.banner h2{
+	color: white;
+	font-size: 16px;
+	font-weight: normal;
+	position: relative;
+	top: 190px;
+	background: rgba(0, 0, 0, .5);
+	width: 400px;
+	padding-left: 20px;
+}
+
+header {
+	overflow: hidden;
+}
+.second-img {
+	background: url(../img/drawing-img.jpg) no-repeat;
+	width: 360px;
+	height: 230px;
+}
+
+
+/*
+*************
+*=Nav
+*************
+*/
+
+nav	ul {
+	float: right;
+	padding-top: 80px;
+
+	
+}
+nav li{
+	display: inline;
+	padding-left: 25px;
+	margin-right: 10px;
+}
+a {
+	color: #7e7e7e;
+}
+a:hover, .selected{
+	color: black;
+}

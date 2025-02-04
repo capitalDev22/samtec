@@ -1,0 +1,168 @@
+/*
+*************
+*=Main container
+*************
+*/
+.container_24{
+	/*background: #bebebe;*/
+	font-family: helvetica, futura, arial;
+	font-size: 10pt;
+	margin-top: 10px;
+	background-color: #edeeec;
+}
+/*
+*************
+*=Header
+*************
+*/
+.logo h1{
+	background: url(../img/small-logo.png) no-repeat;
+	width: 250px;
+	height: 100px;
+	text-indent: -9999px;
+	float: left;
+	margin: 10px;
+}
+.banner {
+	background: url(../img/img-2021.jpg) no-repeat;
+	width: 700px;
+	height: 230px;
+	margin-top: 0px;
+}
+.banner h2{
+	color: white;
+	font-size: 16px;
+	font-weight: normal;
+	position: relative;
+	top: 190px;
+	background: rgba(0, 0, 0, .5);
+	width: 400px;
+	padding-left: 20px;
+}
+
+header {
+	overflow: hidden;
+}
+.second-img {
+	background: url(../img/drawing-img.jpg) no-repeat;
+	width: 360px;
+	height: 230px;
+}
+
+
+/*
+*************
+*=Nav
+*************
+*/
+
+nav	ul {
+	float: right;
+	padding-top: 80px;
+
+	
+}
+nav li{
+	display: inline;
+	padding-left: 25px;
+	margin-right: 10px;
+}
+a {
+	color: #7e7e7e;
+}
+a:hover, .selected{
+	color: black;
+}
+
+/*
+*************
+*=Our Projects
+*************
+*/
+.grid_23 h1{
+	font-size: 14pt;
+	color: #395B73;
+	font-weight: normal;
+
+}
+/*
+*************
+*=Projects page
+*************
+*/
+#capital-banner{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+/*.bg p{
+	text-indent: -9999px;
+	background: url(../img/gallery-bg.png);
+	position: relative;
+	left: 25px;
+	height: 1500px;
+}
+.container-fluid{
+	position: relative;
+	bottom: 1450px;
+	left: 70px;
+}*/
+.container-fluid{
+	position: relative;
+	left: 8.3%;
+}
+.container-fluid img{
+	width: 300px;
+	height: 250px;
+	border-radius: 5%;
+}
+.second-project{
+	position: relative;
+	left: 100px;
+}
+.second-project p{
+	padding-left: 20px;
+}
+.first-project p{
+	padding-left: 20px;
+	line-height: 5pt;
+	color: #395B73;
+	font-weight: bold;
+}
+.second-project p{
+	padding-left: 20px;
+	line-height: 5pt;
+	color: #395B73;
+	font-weight: bold;
+}
+.fourth-project{
+	position: relative;
+	left: 100px;
+}
+.third-project p{
+	padding-left: 20px;
+	line-height: 5pt;
+	color: #395B73;
+	font-weight: bold;
+}
+.fourth-project p{
+	padding-left: 20px;
+	line-height: 5pt;
+	color: #395B73;
+	font-weight: bold;
+}
+.sixth-project{
+	position: relative;
+	left: 100px;
+}
+.fifth-project p{
+	padding-left: 20px;
+	line-height: 5pt;
+	color: #395B73;
+	font-weight: bold;
+}
+.sixth-project p{
+	padding-left: 20px;
+	line-height: 5pt;
+	color: #395B73;
+	font-weight: bold;
+}
