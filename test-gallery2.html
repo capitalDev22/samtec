@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .gallery {
+            width: 710px;
+            display: grid;
+            grid-template-columns: repeat(3, 190px);
+            grid-gap: 10px;
+            position: relative;
+        }
+        .gallery img {
+            width: 190px;
+            height: 120px;
+            object-fit: cover;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 520px;
+            height: 320px;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .lightbox img {
+            width: 500px;
+            height: auto;
+        }
+        .controls {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-top: 10px;
+        }
+        .controls button {
+            background: rgba(255, 255, 255, 0.7);
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            padding: 10px;
+        }
+        .back-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: red;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery" id="gallery">
+        <img src="img/aux-img/project1_cover.jpeg" onclick="openGallery(0)">
+        <img src="img/aux-img/three-panel-1.png" onclick="openGallery(1)">
+        <img src="project3_cover.jpg" onclick="openGallery(2)">
+        <img src="project4_cover.jpg" onclick="openGallery(3)">
+        <img src="project5_cover.jpg" onclick="openGallery(4)">
+        <img src="project6_cover.jpg" onclick="openGallery(5)">
+        <img src="project7_cover.jpg" onclick="openGallery(6)">
+        <img src="project8_cover.jpg" onclick="openGallery(7)">
+        <img src="project9_cover.jpg" onclick="openGallery(8)">
+    </div>
+
+    <div class="lightbox" id="lightbox">
+        <button class="back-btn" onclick="closeGallery()">X</button>
+        <img id="lightbox-img">
+        <div class="controls">
+            <button onclick="prevImage()">&#10094;</button>
+            <button onclick="nextImage()">&#10095;</button>
+        </div>
+    </div>
+
+    <script>
+        const projects = [
+            ['img/aux-img/project1_1.jpg', 'img/aux-img/project1_2.jpg', 'img/aux-img/project1_3.jpg'],
+            ['img/aux-img/two-panel-0.png', 'img/aux-img/two-panel-1.png', 'img/aux-img/two-panel-2.png'],
+            ['project3_1.jpg', 'project3_2.jpg', 'project3_3.jpg'],
+            ['project4_1.jpg', 'project4_2.jpg', 'project4_3.jpg'],
+            ['project5_1.jpg', 'project5_2.jpg', 'project5_3.jpg'],
+            ['project6_1.jpg', 'project6_2.jpg', 'project6_3.jpg'],
+            ['project7_1.jpg', 'project7_2.jpg', 'project7_3.jpg'],
+            ['project8_1.jpg', 'project8_2.jpg', 'project8_3.jpg'],
+            ['project9_1.jpg', 'project9_2.jpg', 'project9_3.jpg']
+        ];
+        
+        let currentProject = 0;
+        let currentIndex = 0;
+
+        function openGallery(index) {
+            currentProject = index;
+            currentIndex = 0;
+            document.getElementById('lightbox-img').src = projects[index][0];
+            document.getElementById('lightbox').style.display = 'flex';
+        }
+
+        function closeGallery() {
+            document.getElementById('lightbox').style.display = 'none';
+        }
+
+        function nextImage() {
+            currentIndex = (currentIndex + 1) % projects[currentProject].length;
+            document.getElementById('lightbox-img').src = projects[currentProject][currentIndex];
+        }
+
+        function prevImage() {
+            currentIndex = (currentIndex - 1 + projects[currentProject].length) % projects[currentProject].length;
+            document.getElementById('lightbox-img').src = projects[currentProject][currentIndex];
+        }
+    </script>
+</body>
+</html>
+
+
