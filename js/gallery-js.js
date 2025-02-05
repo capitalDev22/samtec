@@ -28,7 +28,7 @@
                 } else if (e.target.classList.contains('next')) {
                     currentImageIndex = (currentImageIndex + 1) % images.length;
                     showImage(currentImageIndex);
-                } else if (e.target.classList.contains('back')) {
+                } else if (e.target.classList.contains('back-button')) {
                     folderOverlay.style.display = 'none'; // Hide the overlay
                     gallery.classList.remove('blur'); // Remove the blur effect
                 }
